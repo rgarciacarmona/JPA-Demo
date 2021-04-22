@@ -34,7 +34,6 @@ public class JPAUpdate {
 
 		// Get the new department's location from the command prompt
 		System.out.println("Company's departments:");
-		Query q1 = em.createNativeQuery("SELECT * FROM departments WHERE name LIKE ?", Department.class);
 		printDepartments();
 		System.out.print("Choose a department to change its location. Type it's ID:");
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
